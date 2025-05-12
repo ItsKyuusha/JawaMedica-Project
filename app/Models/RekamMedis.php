@@ -24,5 +24,13 @@ class RekamMedis extends Model
     {
         return $this->belongsTo(User::class, 'user_id');
     }
+    
+    public function obats()
+    {
+        return $this->belongsToMany(Obat::class, 'rekam_medis_obat')
+                    ->withPivot('jumlah')
+                    ->withTimestamps();
+    }
+
 }
 

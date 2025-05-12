@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             BookingsSeeder::class,
             RekamMedisSeeder::class,
             ArtikelsSeeder::class,
+            ObatSeeder::class,
         ]);
     }
 }
